@@ -7,11 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class', // Habilita el dark mode manual
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        'marca': '#3b82f6', // Azul Tailwind por defecto
+                        'marca': '#3b82f6',
                     }
                 }
             }
@@ -34,21 +34,37 @@
 
     <!-- HERO SECTION -->
     <main class="max-w-6xl mx-auto px-6 mt-20 flex flex-col md:flex-row items-center gap-12">
+
         <!-- Textos -->
         <div class="md:w-1/2">
             <h1 class="text-5xl font-extrabold leading-tight">
                 El mejor espacio para <span class="text-marca">escribir código.</span>
             </h1>
+
             <p class="mt-6 text-lg text-gray-600">
                 Únete a nuestra comunidad de desarrolladores. Aprende, conecta y construye el futuro en un ambiente diseñado para ti.
             </p>
+
             <div class="mt-8 flex gap-4">
-                <button class="bg-marca text-white px-8 py-3 rounded-lg font-bold">Unirse ahora</button>
-                <button class="bg-gray-200 text-gray-800 px-8 py-3 rounded-lg font-bold">Ver planes</button>
+                <button class="bg-marca text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg">
+                    Unirse ahora
+                </button>
+
+                <button class="bg-gray-200 text-gray-800 px-8 py-3 rounded-lg font-bold">
+                    Ver planes
+                </button>
             </div>
         </div>
-        
-        <!-- Aquí irá la imagen en el siguiente commit -->
+
+        <!-- Imagen -->
+        <div class="md:w-1/2">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                alt="Programador trabajando"
+                class="rounded-2xl shadow-2xl object-cover h-96 w-full"
+            >
+        </div>
+
     </main>
 
 </body>
